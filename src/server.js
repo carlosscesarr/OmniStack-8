@@ -9,7 +9,7 @@ const server = express();
 mongoose.connect(`mongodb+srv://omnistack8:omnistack8@cluster0-my0ee.mongodb.net/omnistack8?retryWrites=true&w=majority`, {
     useNewUrlParser: true
 })
-server.use(cores());
+server.use(cors());
 server.use(express.json());
 server.use(routes);
 
